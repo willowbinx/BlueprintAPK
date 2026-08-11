@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (The main UI inherits from this after booting) -->
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme colors here if desired -->
+    </style>
+
+    <!-- Renamed from MyApplication to Mealie to clean up the code -->
+    <style name="Theme.Mealie" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- Transitional Splash Screen Theme -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Background color of the splash screen (Deep Charcoal Dark Mode) -->
+        <item name="windowSplashScreenBackground">#121212</item>
+
+        <!-- Points to your custom icon inside your drawable folder -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+
+        <!-- Switches the app UI to Mealie's base theme as soon as it boots -->
+        <item name="postSplashScreenTheme">@style/Theme.AppCompat.Light.NoActionBar</item>
+    </style>
+</resources>
